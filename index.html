@@ -2,14 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Install Trivia</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #4A90E2;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #4A90E2;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .download-button:hover {
+      background-color: #357ABD;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .download-button {
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Install Trivia Web Clip</h1>
-  <p>Click the button below to install the app on your iPhone:</p>
-  <a href="profile.mobileconfig" download="Trivia.mobileconfig">
-    <button>Download Configuration Profile</button>
-  </a>
+  <div class="container">
+    <h1>Install Trivia Web Clip</h1>
+    <p>Click the button below to install the app on your iPhone:</p>
+    <a href="profile.mobileconfig" download="Trivia.mobileconfig" class="download-button">Download Configuration Profile</a>
+  </div>
 </body>
 </html>
